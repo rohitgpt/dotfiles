@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/krullun/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -98,12 +98,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="/home/krullun/anaconda3/bin:$PATH"
+export PATH="$HOME/anaconda3/bin:$PATH"
 
-alias soundwire="nohup /home/krullun/Downloads/software/SoundWireServer/SoundWireServer &"
+alias soundwire="nohup $HOME/Downloads/software/SoundWireServer/SoundWireServer &"
 alias upd="sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get -y autoremove && sudo apt-get -y autoclean"
 alias gadd="git add --all && git commit -am 'Added files' && git push"
-alias forti="/home/krullun/Downloads/software/forticlientsslvpn/64bit/forticlientsslvpn_cli --server gateway.iitk.ac.in:443 --vpnuser rohitd"
+alias forti="$HOME/Downloads/software/forticlientsslvpn/64bit/forticlientsslvpn_cli --server gateway.iitk.ac.in:443 --vpnuser rohitd"
 alias timeupd="sudo date -s '$(wget -qSO- --max-redirect=0 bing.com 2>&1 | grep Date: | cut -d' ' -f5-9)'"
 
 function gcomp(){
@@ -115,4 +115,4 @@ function gcomp(){
 	fi
 }
 #gcomp()
-alias config='/usr/bin/git --git-dir=/home/krullun/dotfiles/ --work-tree=/home/krullun'
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
